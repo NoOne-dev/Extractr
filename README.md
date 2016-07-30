@@ -4,7 +4,7 @@
 
 <img src="https://github.com/roonieone/Extractr/blob/master/PR/Etxractr%402x.png" alt="pr-image" width="650"/>
 
-Extractr is a GUI tool for extract the iOS root file system from an OTA update, automating the manual "Extract the Root File System" instructions found [here](https://gist.github.com/roonieone/d6567e80500d1e3f6e5fa8e80d5d8b3c). Currently, the only *officially* supported iOS versions are **iOS 10.0 betas 1-3**.
+Extractr is a GUI tool for extracting the iOS root file system from an OTA update, automating the manual "Extract the Root File System" instructions found [here](https://gist.github.com/roonieone/d6567e80500d1e3f6e5fa8e80d5d8b3c). Currently, the only *officially* supported iOS versions are **iOS 10.0 betas 1-3**.
 
 [Download the latest version of Extractr](https://github.com/roonieone/Extractr/releases)
 
