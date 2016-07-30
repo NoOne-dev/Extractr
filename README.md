@@ -2,6 +2,8 @@
 ![Mac](https://img.shields.io/badge/platform-Mac-1C92F5.svg)
 ![Swift](https://img.shields.io/badge/lang-Swift-FFAC45.svg?style=flat)
 
+<img src="https://github.com/roonieone/Extractr/blob/master/PR/Etxractr%402x.png" alt="pr-image" width="650"/>
+
 Extractr is a tool to extract the iOS root file system from an OTA update. Currently the only *offically* supported iOS versions are **iOS 10.0 betas 1-3**.
 
 Extractr is a GUI tool that automates the manual "Extract the Root File System" instructions found [here](https://gist.github.com/roonieone/d6567e80500d1e3f6e5fa8e80d5d8b3c).
@@ -23,6 +25,7 @@ In the comming weeks and months I plan to add various features to Extractr:
 - [ ] [ipsw.me API](https://api.ipsw.me/) support for downloading OTA `ZIP`s and `IPSW`s from within the app
 - [ ] Preferences for deleting the original `ZIP`, etc.
 - [ ] Light and dark themes for the concole output
+- [ ] Add [Sparkle](https://github.com/sparkle-project/Sparkle) support for updates
 
 Extractr is completely free and open source. If you come across any bugs or have some free time on your hands and want to take a stab at implementing any of the above features, feel free to send me a pull request or file an issue.
 
