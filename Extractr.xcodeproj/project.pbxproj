@@ -11,13 +11,12 @@
 		DB379EE61D4A9E5200A194A4 /* ExtractrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB379EE51D4A9E5200A194A4 /* ExtractrViewController.swift */; };
 		DB379EE81D4A9E5200A194A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB379EE71D4A9E5200A194A4 /* Assets.xcassets */; };
 		DB379EEB1D4A9E5200A194A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB379EE91D4A9E5200A194A4 /* Main.storyboard */; };
-		DB379EFA1D4AA2C000A194A4 /* applyota.sh in Resources */ = {isa = PBXBuildFile; fileRef = DB379EF31D4AA2C000A194A4 /* applyota.sh */; };
-		DB379EFB1D4AA2C000A194A4 /* bxpatch in Resources */ = {isa = PBXBuildFile; fileRef = DB379EF41D4AA2C000A194A4 /* bxpatch */; };
 		DB379EFC1D4AA2C000A194A4 /* liblzma.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB379EF51D4AA2C000A194A4 /* liblzma.dylib */; };
 		DB379EFE1D4AA2C000A194A4 /* otaa in Resources */ = {isa = PBXBuildFile; fileRef = DB379EF71D4AA2C000A194A4 /* otaa */; };
 		DB379EFF1D4AA2C000A194A4 /* pbzx in Resources */ = {isa = PBXBuildFile; fileRef = DB379EF81D4AA2C000A194A4 /* pbzx */; };
-		DB379F021D4AA97800A194A4 /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB379F011D4AA97800A194A4 /* Automator.framework */; };
 		DB379F041D4AB09F00A194A4 /* unar in Resources */ = {isa = PBXBuildFile; fileRef = DB379F031D4AB09F00A194A4 /* unar */; };
+		DB3F80141D4C904B00622FE2 /* ExtractFileSystem.command in Resources */ = {isa = PBXBuildFile; fileRef = DB379F051D4AB0FC00A194A4 /* ExtractFileSystem.command */; };
+		DB3F80171D4C915B00622FE2 /* SFMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB3F80161D4C915B00622FE2 /* SFMono-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,15 +26,12 @@
 		DB379EE71D4A9E5200A194A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB379EEA1D4A9E5200A194A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB379EEC1D4A9E5200A194A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB379EF31D4AA2C000A194A4 /* applyota.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = applyota.sh; sourceTree = "<group>"; };
-		DB379EF41D4AA2C000A194A4 /* bxpatch */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bxpatch; sourceTree = "<group>"; };
 		DB379EF51D4AA2C000A194A4 /* liblzma.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblzma.dylib; sourceTree = "<group>"; };
 		DB379EF71D4AA2C000A194A4 /* otaa */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = otaa; sourceTree = "<group>"; };
 		DB379EF81D4AA2C000A194A4 /* pbzx */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pbzx; sourceTree = "<group>"; };
-		DB379F011D4AA97800A194A4 /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = System/Library/Frameworks/Automator.framework; sourceTree = SDKROOT; };
 		DB379F031D4AB09F00A194A4 /* unar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = unar; path = ../../../../../Downloads/unar1.10.1/unar; sourceTree = "<group>"; };
-		DB379F051D4AB0FC00A194A4 /* ExtractFileSystem.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ExtractFileSystem.sh; sourceTree = "<group>"; };
-		DB379F061D4AB66400A194A4 /* Extractr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Extractr-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB379F051D4AB0FC00A194A4 /* ExtractFileSystem.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ExtractFileSystem.command; sourceTree = "<group>"; };
+		DB3F80161D4C915B00622FE2 /* SFMono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFMono-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB379F021D4AA97800A194A4 /* Automator.framework in Frameworks */,
 				DB379EFC1D4AA2C000A194A4 /* liblzma.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +49,6 @@
 		DB379ED71D4A9E5200A194A4 = {
 			isa = PBXGroup;
 			children = (
-				DB379F011D4AA97800A194A4 /* Automator.framework */,
 				DB379EE21D4A9E5200A194A4 /* Extractr */,
 				DB379EE11D4A9E5200A194A4 /* Products */,
 			);
@@ -71,45 +65,43 @@
 		DB379EE21D4A9E5200A194A4 /* Extractr */ = {
 			isa = PBXGroup;
 			children = (
-				DB379F091D4ABABA00A194A4 /* External binaries */,
-				DB379F0A1D4ABB0300A194A4 /* Other files */,
 				DB379EE31D4A9E5200A194A4 /* AppDelegate.swift */,
 				DB379EE51D4A9E5200A194A4 /* ExtractrViewController.swift */,
 				DB379EE91D4A9E5200A194A4 /* Main.storyboard */,
+				DB379F091D4ABABA00A194A4 /* Resources */,
 				DB379EE71D4A9E5200A194A4 /* Assets.xcassets */,
-				DB379EEC1D4A9E5200A194A4 /* Info.plist */,
+				DB3F80181D4C91CF00622FE2 /* Supporting Files */,
 			);
 			path = Extractr;
 			sourceTree = "<group>";
 		};
-		DB379EF21D4AA29B00A194A4 /* OTApack */ = {
+		DB379F091D4ABABA00A194A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DB379EF31D4AA2C000A194A4 /* applyota.sh */,
-				DB379EF41D4AA2C000A194A4 /* bxpatch */,
+				DB379F051D4AB0FC00A194A4 /* ExtractFileSystem.command */,
+				DB3F80151D4C914600622FE2 /* External binaries */,
+				DB3F80161D4C915B00622FE2 /* SFMono-Regular.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DB3F80151D4C914600622FE2 /* External binaries */ = {
+			isa = PBXGroup;
+			children = (
+				DB379F031D4AB09F00A194A4 /* unar */,
 				DB379EF51D4AA2C000A194A4 /* liblzma.dylib */,
 				DB379EF71D4AA2C000A194A4 /* otaa */,
 				DB379EF81D4AA2C000A194A4 /* pbzx */,
 			);
-			name = OTApack;
-			sourceTree = "<group>";
-		};
-		DB379F091D4ABABA00A194A4 /* External binaries */ = {
-			isa = PBXGroup;
-			children = (
-				DB379F031D4AB09F00A194A4 /* unar */,
-				DB379EF21D4AA29B00A194A4 /* OTApack */,
-			);
 			name = "External binaries";
 			sourceTree = "<group>";
 		};
-		DB379F0A1D4ABB0300A194A4 /* Other files */ = {
+		DB3F80181D4C91CF00622FE2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DB379F061D4AB66400A194A4 /* Extractr-Bridging-Header.h */,
-				DB379F051D4AB0FC00A194A4 /* ExtractFileSystem.sh */,
+				DB379EEC1D4A9E5200A194A4 /* Info.plist */,
 			);
-			name = "Other files";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +162,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB379EFA1D4AA2C000A194A4 /* applyota.sh in Resources */,
+				DB3F80141D4C904B00622FE2 /* ExtractFileSystem.command in Resources */,
 				DB379EFE1D4AA2C000A194A4 /* otaa in Resources */,
-				DB379EFB1D4AA2C000A194A4 /* bxpatch in Resources */,
+				DB3F80171D4C915B00622FE2 /* SFMono-Regular.otf in Resources */,
 				DB379EE81D4A9E5200A194A4 /* Assets.xcassets in Resources */,
 				DB379EFF1D4AA2C000A194A4 /* pbzx in Resources */,
 				DB379F041D4AB09F00A194A4 /* unar in Resources */,
@@ -302,7 +294,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.tangaroa.Extractr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Extractr/Extractr-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -321,7 +312,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.tangaroa.Extractr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Extractr/Extractr-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -344,6 +334,7 @@
 				DB379EF11D4A9E5200A194A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

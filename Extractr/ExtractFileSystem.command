@@ -11,20 +11,31 @@
 cd "${1}"
 
 # Use unar to extract the OTA .zip file
-echo "Unziping OTA zip file"
+echo "*********************"
+echo "Unziping OTA ZIP file"
+echo "*********************"
 
 # 3 == unar binary path
 # 2 == OTA .zip path
 "${3}" "${2}"
 
 # Create pb.xz
+echo "*******************"
 echo "Creating pb.xz file"
+echo "*******************"
+
+# 5 == name of expanded zip directory
+mv "${5}" iOS\ File\ System
+
+cd iOS\ File\ System
 
 # 4 == pbxz binary path
 "${4}" AssetData/payloadv2/payload > pb.xz
 
 # Unarchive pb.xz
+echo "**********************"
 echo "Unarchiving pb.xz file"
+echo "**********************"
 
 # 3 == unar binary path
 "${3}" ./pb.xz
@@ -39,13 +50,23 @@ mv ./pb ./rootfs
 cd rootfs
 
 # Extract the root file system
+echo "*******************************"
 echo "Extracting the root file system"
- ../otaa -e '*' ./pb
+echo "*******************************"
 
+# 6 == otaa binary path
+"${6}" -e '*' ./pb
 
+# Clean up
+rm -rf pb
+cd ..
+rm -rf AssetData
+rm -rf Info.plist
+rm -rf META-INF
+rm -rf pb.xz
+mv rootfs/* .
+rm -rf rootfs
 
-
-
-
+echo "Done! Successfully extracted the iOS File System from ${5}.zip"
 
 
