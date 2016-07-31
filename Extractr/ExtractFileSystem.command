@@ -19,15 +19,14 @@ echo "*********************"
 # 2 == OTA .zip path
 "${3}" "${2}"
 
+# 5 == name of expanded zip directory
+mv "${5}" iOS\ File\ System
+cd iOS\ File\ System
+
 # Create pb.xz
 echo "*******************"
 echo "Creating pb.xz file"
 echo "*******************"
-
-# 5 == name of expanded zip directory
-mv "${5}" iOS\ File\ System
-
-cd iOS\ File\ System
 
 # 4 == pbxz binary path
 "${4}" AssetData/payloadv2/payload > pb.xz

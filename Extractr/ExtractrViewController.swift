@@ -24,7 +24,7 @@ class ExtractrViewController: NSViewController {
 	var task: NSTask!
 	var isRunning: Bool = false
 
-	// MARK:- viewDidLoad
+	// MARK:- viewDid
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -38,14 +38,20 @@ class ExtractrViewController: NSViewController {
 		
 		// Customize the outputTextView NSTextView appearence
 		outputTextView.font = NSFont(name: "SFMono-Regular", size: 12)
-		outputTextView.backgroundColor = NSColor(red:0.077, green:0.142, blue:0.212, alpha:1)
+		// Sets the background color to navy blue
+		// outputTextView.backgroundColor = NSColor(red:0.077, green:0.142, blue:0.212, alpha:1)
+	}
+	
+	override func viewDidAppear() {
+		// Disable window resizing
+		self.view.window?.styleMask &= ~NSResizableWindowMask
 	}
 	
 	// MARK:- Methods
 	// Set the text color inside the outputTextView to white
 	func setTextColor() {
-		let range = NSRange(location: 0, length: outputTextView.textStorage!.length)
-		outputTextView.setTextColor(NSColor.whiteColor(), range: range)
+		// let range = NSRange(location: 0, length: outputTextView.textStorage!.length)
+		// outputTextView.setTextColor(NSColor.whiteColor(), range: range)
 	}
 	
 	// Displays the standard output
@@ -96,6 +102,8 @@ class ExtractrViewController: NSViewController {
 				task in
 				dispatch_async(dispatch_get_main_queue(), {
 					self.extractButton.enabled = true
+					self.OTAPath.enabled = true
+					self.outputPath.enabled = true
 					self.stopExtractionButton.enabled = false
 					self.spinner.stopAnimation(self)
 					self.spinner.hidden = true
@@ -150,6 +158,8 @@ class ExtractrViewController: NSViewController {
 			
 			// Set states of various UI elements before starting the task
 			extractButton.enabled = false
+			self.OTAPath.enabled = false
+			self.outputPath.enabled = false
 			self.stopExtractionButton.enabled = true
 			self.spinner.hidden = false
 			spinner.startAnimation(self)

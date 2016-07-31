@@ -11,12 +11,11 @@
 		DB379EE61D4A9E5200A194A4 /* ExtractrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB379EE51D4A9E5200A194A4 /* ExtractrViewController.swift */; };
 		DB379EE81D4A9E5200A194A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB379EE71D4A9E5200A194A4 /* Assets.xcassets */; };
 		DB379EEB1D4A9E5200A194A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB379EE91D4A9E5200A194A4 /* Main.storyboard */; };
-		DB379EFC1D4AA2C000A194A4 /* liblzma.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB379EF51D4AA2C000A194A4 /* liblzma.dylib */; };
 		DB379EFE1D4AA2C000A194A4 /* otaa in Resources */ = {isa = PBXBuildFile; fileRef = DB379EF71D4AA2C000A194A4 /* otaa */; };
 		DB379EFF1D4AA2C000A194A4 /* pbzx in Resources */ = {isa = PBXBuildFile; fileRef = DB379EF81D4AA2C000A194A4 /* pbzx */; };
-		DB379F041D4AB09F00A194A4 /* unar in Resources */ = {isa = PBXBuildFile; fileRef = DB379F031D4AB09F00A194A4 /* unar */; };
 		DB3F80141D4C904B00622FE2 /* ExtractFileSystem.command in Resources */ = {isa = PBXBuildFile; fileRef = DB379F051D4AB0FC00A194A4 /* ExtractFileSystem.command */; };
 		DB3F80171D4C915B00622FE2 /* SFMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB3F80161D4C915B00622FE2 /* SFMono-Regular.otf */; };
+		DBBBC77E1D4D9B430034F4C8 /* unar in Resources */ = {isa = PBXBuildFile; fileRef = DBBBC77D1D4D9B430034F4C8 /* unar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +25,11 @@
 		DB379EE71D4A9E5200A194A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB379EEA1D4A9E5200A194A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB379EEC1D4A9E5200A194A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB379EF51D4AA2C000A194A4 /* liblzma.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblzma.dylib; sourceTree = "<group>"; };
 		DB379EF71D4AA2C000A194A4 /* otaa */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = otaa; sourceTree = "<group>"; };
 		DB379EF81D4AA2C000A194A4 /* pbzx */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pbzx; sourceTree = "<group>"; };
-		DB379F031D4AB09F00A194A4 /* unar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = unar; path = ../../../../../Downloads/unar1.10.1/unar; sourceTree = "<group>"; };
 		DB379F051D4AB0FC00A194A4 /* ExtractFileSystem.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ExtractFileSystem.command; sourceTree = "<group>"; };
 		DB3F80161D4C915B00622FE2 /* SFMono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFMono-Regular.otf"; sourceTree = "<group>"; };
+		DBBBC77D1D4D9B430034F4C8 /* unar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = unar; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB379EFC1D4AA2C000A194A4 /* liblzma.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +85,7 @@
 		DB3F80151D4C914600622FE2 /* External binaries */ = {
 			isa = PBXGroup;
 			children = (
-				DB379F031D4AB09F00A194A4 /* unar */,
-				DB379EF51D4AA2C000A194A4 /* liblzma.dylib */,
+				DBBBC77D1D4D9B430034F4C8 /* unar */,
 				DB379EF71D4AA2C000A194A4 /* otaa */,
 				DB379EF81D4AA2C000A194A4 /* pbzx */,
 			);
@@ -136,6 +132,7 @@
 				TargetAttributes = {
 					DB379EDF1D4A9E5200A194A4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 73S65HZ88F;
 					};
 				};
 			};
@@ -167,7 +164,7 @@
 				DB3F80171D4C915B00622FE2 /* SFMono-Regular.otf in Resources */,
 				DB379EE81D4A9E5200A194A4 /* Assets.xcassets in Resources */,
 				DB379EFF1D4AA2C000A194A4 /* pbzx in Resources */,
-				DB379F041D4AB09F00A194A4 /* unar in Resources */,
+				DBBBC77E1D4D9B430034F4C8 /* unar in Resources */,
 				DB379EEB1D4A9E5200A194A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +282,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Extractr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -294,6 +293,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.tangaroa.Extractr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -303,6 +303,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Extractr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -312,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.tangaroa.Extractr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
