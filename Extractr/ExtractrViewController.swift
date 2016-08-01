@@ -130,7 +130,7 @@ class ExtractrViewController: NSViewController {
 			    Used to interact with the expanded directory */
 			let OTAExpandedLoaction = NSString(string: OTAURL.lastPathComponent!).stringByDeletingPathExtension
 			
-			/* The following guard lets are used to get the path to included binaries
+			/* The following series of guard statements are used to get the path to included binaries
 			    and make sure they're there */
 			guard let unar = NSBundle.mainBundle().pathForResource("unar", ofType: nil) else {
 				print("Unable to locate unar")
