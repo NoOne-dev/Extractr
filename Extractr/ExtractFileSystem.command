@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#  ExtractFileSystem.sh
+#  ExtractFileSystem.command
 #  Extractr
 #
 #  Created by Mark Malstrom on 7/28/16.
@@ -15,13 +15,12 @@ echo "*********************"
 echo "Unziping OTA ZIP file"
 echo "*********************"
 
-# 3 == unar binary path
 # 2 == OTA .zip path
-"${3}" "${2}"
+unzip "${2}"
 
 # 5 == name of expanded zip directory
-mv "${5}" iOS\ File\ System
-cd iOS\ File\ System
+mv "${5}" "iOS File System"
+cd "iOS File System"
 
 # Create pb.xz
 echo "*******************"
