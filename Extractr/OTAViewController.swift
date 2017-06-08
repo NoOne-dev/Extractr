@@ -36,7 +36,7 @@ class OTAViewController: NSViewController {
 		outputPath.URL = desktopPathURL
 		
 		// Customize the outputTextView NSTextView appearence
-		outputTextView.font = NSFont(name: "SFMono-Regular", size: 12)
+		// outputTextView.font = NSFont(name: "SFMono-Regular", size: 12)
 		// Sets the background color to navy blue
 		// outputTextView.backgroundColor = NSColor(red:0.077, green:0.142, blue:0.212, alpha:1)
 	}
